@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v4.1.2
       - name: Install live-build
         run: "sudo apt-get install -y live-build"
-      - run: "lb config --mirror-bootstrap http://deb.debian.org/debian/ --mirror-security http://deb.debian.org/debian-security/ --distribution bookworm"
+      - run: "lb config --mirror-bootstrap http://deb.debian.org/debian/ --mirror-chroot-security http://deb.debian.org/debian-security/ --distribution sid"
       - run: "sudo lb build"
