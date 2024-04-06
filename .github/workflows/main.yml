@@ -1,4 +1,4 @@
-name: bluebuild
+name: Live ISO
 on:
   push:
     branches: main
