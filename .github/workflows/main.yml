@@ -1,0 +1,14 @@
+name: bluebuild
+on:
+  push:
+    branches: main
+  workflow_dispatch:
+jobs:
+  build:
+    name: Build Custom Image
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.2
+      - name: Install live-build
+        run: "sudo apt-get install -y live-build"
+      - run: "lb build"
