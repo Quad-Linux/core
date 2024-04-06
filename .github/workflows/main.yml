@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v4.1.2
       - name: Install live-build
         run: "sudo apt-get install -y live-build"
-      - run: "lb config --mirror-bootstrap http://ftp.ca.debian.org/debian/ --distribution bookworm"
+      - run: "lb config --mirror-bootstrap http://ftp.ca.debian.org/debian/ --mirror-binary http://ftp.ca.debian.org/debian/ --distribution bookworm"
       - run: "sudo lb build"
