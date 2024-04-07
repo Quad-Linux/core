@@ -20,3 +20,5 @@ jobs:
         run: "sudo lb build"
       - name: Attach ISO
         uses: actions/upload-artifact@v4.3.1
+        with:
+          name: "*.iso"
