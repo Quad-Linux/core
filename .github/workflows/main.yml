@@ -13,9 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4.1.2
       - name: Install packages
-        run: "sudo apt-get install -y live-build apt-transport-https"
+        run: "sudo apt-get install -y live-build"
       - name: Configure live-build
-        run: "lb config --quiet --distribution bookworm --mode debian"
+        run: "lb config --quiet --distribution bookworm --mode debian --mirror-bootstrap https://deb.debian.org/debian --mirror-chroot-security https://security.debian.org"
       - name: Build ISO
         run: "sudo lb build"
       - name: Attach ISO
