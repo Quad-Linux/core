@@ -21,10 +21,12 @@ jobs:
         run: |
           apt update
           apt install -y live-build
+      - name: Configure live-build
+        run: lb config
       - name: Build ISO
-        run: "lb build"
+        run: lb build
       - name: Attach ISO
         uses: actions/upload-artifact@v4.3.1
         with:
-          name: "quados.iso"
+          name: QuadOS.iso
           path: "*.iso"
