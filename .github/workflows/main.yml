@@ -21,11 +21,10 @@ jobs:
         run: |
           apt update
           apt install -y live-build
-      - name: Configure live-build
-        run: "lb config --mirror-bootstrap https://debttrr.debian.org/debian --distribution bookworm"
       - name: Build ISO
         run: "lb build"
       - name: Attach ISO
         uses: actions/upload-artifact@v4.3.1
         with:
-          name: "*.iso"
+          name: "quados.iso"
+          path: "*.iso"
