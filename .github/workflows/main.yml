@@ -24,7 +24,7 @@ jobs:
       - name: Configure live-build
         run: "lb config --mirror-bootstrap https://debttrr.debian.org/debian --distribution bookworm"
       - name: Build ISO
-        run: "sudo lb build"
+        run: "lb build"
       - name: Attach ISO
         uses: actions/upload-artifact@v4.3.1
         with:
