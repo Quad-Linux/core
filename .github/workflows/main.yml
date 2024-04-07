@@ -15,7 +15,7 @@ jobs:
       - name: Install packages
         run: "sudo apt-get install -y live-build"
       - name: Configure live-build
-        run: "lb config --quiet --distribution bookworm --mode debian --mirror-bootstrap https://deb.debian.org/debian --mirror-chroot-security https://security.debian.org"
+        run: "lb config --quiet --distribution bookworm --mode debian --mirror-bootstrap https://debttrr.debian.org/debian --mirror-chroot-security https://security.debian.org"
       - name: Build ISO
         run: "sudo lb build"
       - name: Attach ISO
