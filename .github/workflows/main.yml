@@ -3,6 +3,9 @@ on:
   push:
     branches: main
   workflow_dispatch:
+concurrency:
+  cancel-in-progress: true
+  group: "build"
 jobs:
   build:
     name: Build Custom Image
