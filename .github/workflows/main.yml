@@ -15,7 +15,7 @@ jobs:
       - name: Install live-build
         run: "sudo apt-get install -y live-build"
       - name: Configure live-build
-        run: "lb config --distribution bullseye --mode debian"
+        run: "lb config --distribution bullseye --mode debian --updates false"
       - name: Build ISO
         run: "sudo lb build"
       - name: Attach ISO
