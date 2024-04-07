@@ -15,7 +15,7 @@ jobs:
       - name: Install live-build
         run: "sudo apt-get install -y live-build"
       - name: Configure live-build
-        run: "lb config --security false --mode debian"
+        run: "lb config --quiet --security false --mode debian"
       - name: Build ISO
         run: "sudo lb build"
       - name: Attach ISO
