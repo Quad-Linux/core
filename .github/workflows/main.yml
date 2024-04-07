@@ -10,12 +10,17 @@ jobs:
   build:
     name: Build Custom Image
     runs-on: ubuntu-latest
+    container:
+      image: debian:latest
+      volumes:
+        - /proc:/proc
+      options: --privileged
     steps:
       - uses: actions/checkout@v4.1.2
       - name: Install packages
         run: "sudo apt-get install -y live-build"
       - name: Configure live-build
-        run: "lb config --mirror-bootstrap https://debttrr.debian.org/debian --mirror-chroot-security https://security.debian.org --distribution bookworm"
+        run: "lb config --mirror-bootstrap https://debttrr.debian.org/debian --distribution bookworm"
       - name: Build ISO
         run: "sudo lb build"
       - name: Attach ISO
