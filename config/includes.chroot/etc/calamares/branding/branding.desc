@@ -1,0 +1,28 @@
+componentName:  fancy
+
+welcomeStyleCalamares: false
+
+strings:
+    productName:         QuadOS Linux
+    shortProductName:    QuadOS
+    version:             1.0.0
+    shortVersion:        1
+    versionedName:       QuadOS Linux 1.0.0
+    shortVersionedName:  QuadOS 1.0.0
+    bootloaderEntryName: QuadOS
+    productUrl:          https://github.com/Quad-Linux
+    supportUrl:          https://github.com/Quad-Linux
+    knownIssuesUrl:      https://github.com/Quad-Linux
+    releaseNotesUrl:     https://github.com/Quad-Linux
+
+welcomeExpandingLogo:   true
+
+images:
+    productLogo:         "logo.svg"
+    productIcon:         "logo.svg"
+
+style:
+   sidebarBackground:    "#4c566a"
+   sidebarText:          "#FFFFFF"
+   sidebarTextSelect:    "#ebcb8b"
+   sidebarTextHighlight: "#88c0d0"
