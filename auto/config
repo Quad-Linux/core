@@ -1,3 +1,2 @@
 #!/bin/sh
-
-  lb config -d bookworm "${@}"
+lb config noauto -d bookworm "${@}"
