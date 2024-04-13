@@ -1,4 +1,4 @@
-componentName:  fancy
+componentName: quad
 
 welcomeStyleCalamares: false
 
@@ -18,11 +18,14 @@ strings:
 welcomeExpandingLogo:   true
 
 images:
-    productLogo:         "logo.svg"
-    productIcon:         "logo.svg"
+    productLogo:         "logo.png"
+    productIcon:         "logo.png"
+
+slideshow:  []
 
 style:
    sidebarBackground:    "#4c566a"
    sidebarText:          "#FFFFFF"
-   sidebarTextSelect:    "#ebcb8b"
+   sidebarTextSelect:    "#FFFFFF"
    sidebarTextHighlight: "#88c0d0"
+   
