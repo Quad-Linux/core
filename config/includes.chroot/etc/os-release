@@ -1,8 +1,1 @@
-PRETTY_NAME="QuadOS Linux 1.0.0"
-NAME="QuadOS Linux"
-VERSION_ID="1.0.0"
-VERSION="1.0.0"
-ID=quados
-HOME_URL=https://github.com/Quad-Linux
-SUPPORT_URL=https://github.com/Quad-Linux
-BUG_REPORT_URL=https://github.com/Quad-Linux
+../usr/lib/os-release
