@@ -1,0 +1,4 @@
+[Daemon]
+Theme=default
+ShowDelay=0
+DeviceTimeout=8
