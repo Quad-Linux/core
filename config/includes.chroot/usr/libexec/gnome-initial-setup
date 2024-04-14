@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-exec sudo -E calamares
+exec pkexec calamares
