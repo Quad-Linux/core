@@ -24,8 +24,8 @@ images:
 slideshow:  []
 
 style:
-   sidebarBackground:    "#4c566a"
-   sidebarText:          "#FFFFFF"
+   sidebarBackground:    "#FFFFFF"
+   sidebarText:          "#000000"
    sidebarTextSelect:    "#FFFFFF"
    sidebarTextHighlight: "#88c0d0"
    
